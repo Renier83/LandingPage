@@ -3,10 +3,33 @@
 
 
 body {
-    display: flex;
+    
     background-color:darkgrey;
     align-items: center;
     min-height: 100vh;
+}
+
+
+.navbar {
+    background-color:#013369 !important;
+
+}
+.navbar-light .navbar-brand{
+    color:white;
+}
+
+
+.navbar-brand{
+    display: flex;
+    align-items: center
+}
+.navbar-nav{
+    margin-left: auto;
+}
+
+.dropdown-menu, .dropdown-menu[data-bs-popper]{
+    right:0;
+    left:unset
 }
 
 .container {
