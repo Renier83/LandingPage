@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <title>Renier Mendez Webpage</title>
+</head>
+<body>
+  <section></section>
+<script>
+
+    const colors = [
+        '#2196f3',
+        '#e91e63',
+        '#ffeb3b',
+        '#74ff1d'
+    ]
+
+  function createSquare(){
+    const section = document.querySelector('section');
+    const square = document.createElement('span');
+
+    var size = Math.random() * 50;
+
+    square.style.width = 20 + size +'px';
+    square.style.height = 20 + size +'px';
+
+    square.style.top = Math.random() * innerHeight + 'px';
+    square.style.left = Math.random() * innerWidth + 'px';
+
+    const bg = colors[Math.floor(Math.random() * colors. length)];
+    square.style.background = bg;
+
+    section.appendChild(square);
+
+    setTimeout(() => {
+         square.remove()
+    }, 5000)
+  
+  }
+
+  setInterval(createSquare , 150)
+</script>
+
+</body>
+</html>

@@ -1,12 +1,28 @@
-
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 
 body {
-    
-    background-color:darkgrey;
+    overflow: hidden; 
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    background-color:black;
+}
+
+section {
+    height: 100vh;
+}
+
+span {
+    position: absolute;
+    pointer-events: none;
+    background: white;
+    animation: animate 5s linear infinite;
 }
 
 
